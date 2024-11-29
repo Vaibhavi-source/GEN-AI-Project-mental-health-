@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mental Health Journal</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Mental Health Journal</h1>
+    <p>Log your thoughts, mood, and activities to reflect on your well-being.</p>
+  </header>
+
+  <main>
+    <section class="journal-form">
+      <h2>New Entry</h2>
+      <form id="journalForm">
+        <label for="date">Date:</label>
+        <input type="date" id="date" required>
+
+        <label for="mood">Mood:</label>
+        <select id="mood" required>
+          <option value="">Select Mood</option>
+          <option value="Happy">Happy</option>
+          <option value="Sad">Sad</option>
+          <option value="Anxious">Anxious</option>
+          <option value="Relaxed">Relaxed</option>
+          <option value="Stressed">Stressed</option>
+        </select>
+
+        <label for="thoughts">Thoughts:</label>
+        <textarea id="thoughts" placeholder="Write your thoughts..." required></textarea>
+
+        <button type="submit">Add Entry</button>
+      </form>
+    </section>
+
+    <section class="journal-entries">
+      <h2>Your Journal Entries</h2>
+      <div id="entries"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2024 Mental Health Journal | Take care of yourself 💙</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
